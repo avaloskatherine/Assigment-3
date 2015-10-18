@@ -1,0 +1,91 @@
+.red{background-color:red; 
+}
+.blue{background-color: blue;
+}
+
+h1.logo{
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	margin: 21px 0 0 0;
+	background-color: blue
+	
+}
+
+header h1.logo a {
+	width: 250px;
+	height: 49px;
+	display: block;
+	background: url(../images/madlib.svg) no-repeat 0 0;
+	/*nicolasgallagher.com/another-css-image-replacement-technique/*/
+	font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+header.main{
+	margin-bottom: 21px;
+}
+.band.navigation {
+	background-color: #efefef;	
+	padding: 0;
+	color: #c0c0c0;
+	margin: 0;
+}
+
+nav.primary ul li {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-bottom: 0px;
+}
+
+
+
+nav.primary ul li a {
+	display: inline-block;
+	line-height: 49px;
+	padding:  0 42px 0 42px;
+	color: #ababab;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+}
+
+
+nav.primary ul li:hover > a {
+	background: #e0e0e0;
+}
+
+.wide{
+	display:none;
+}
+.narrow{
+	display: block;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 21px;
+	line-height: 28px;
+}
+nav select{
+	box-sizing: border-box;
+	padding-top: 10px;
+	display: block;
+	margin-top: 21px;
+}
+
+.footer p{
+	padding:50px;
+}
+
+.footer{
+	background-color: #efefef;
+    margin-top: 50px;
+}
+
+
+@media only screen and (min-width: 790px) {
+	.wide{ display: block; }
+	.narrow{ display: none; }		
+}

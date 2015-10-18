@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Mad Lib</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/story1.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+<div class="container" >
+    <div class="row"> <!--beginning of row-->
+      <div>
+        <h1 class=" twelve columns storytitle"> My favorite <span class="animalkind"> animal's name</span>
+        </h1>
+      </div>
+    </div> <!--beginning of row-->
+
+    <div class="row">
+      <div class=" six columns">
+        <p> 
+          <span class="friendsname">Friends name</span> 
+          is the best 
+          <span class="animalkind"> animal's name</span> 
+          in the world. (S)he is quiet except when hungry or when (s)he wants to go 
+          <span id="action">actions</span> in 
+          <span id="favplace">favorite place</span>. 
+          <span class="friendsname">friends name</span> loves to eat 
+          <span id="favfood">favorite food</span>, and will do tricks for a bite of it. This 
+          <span class="animalkind"> animal kind</span> is a friendly 
+          <span class="animalkind">turtle </span>, who enjoys jumping up and sitting on my 
+          <span id="bodypart1" > part of your body</span>. That makes me smile. It's fun to watch 
+          <span class="friendsname">friends name</span> leap into the bathtub and spin in circles trying to catch (his/her) 
+          <span id="bodypart2"> another part of your body</span>. 
+          <span class="friendsname">friendsname</span> likes to sleep a lot, and looks so peaceful while sleeping. One of my favorite things about 
+          <span class="friendsname"> friends name </span> is (his/her) contented 
+          <span class="animalnoise">animal noise</span>. It is music to my ears. 
+        </p>
+      </div>
+
+      <div class=" six columns"> 
+        <img src="images/animals.svg">
+      </div>
+
+    <div class= "row twelve columns dashed"> 
+      <div class= "row six columns grammar">
+        <button type="submit" class="btn btn-default">
+          <a href="grammar.html">GRAMMAR</a> 
+        </button> 
+      </div>
+
+      <div class= "row six columns home ">
+        <button type="submit" class="btn btn-default">
+        <a href="index.html">HOME</a>
+        </button>
+      </div>
+    </div>
+
+</div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+</script>
+
+<script >
+// store each prompt response in a variable.
+    var friendsname = prompt("Enter a friend's name");
+    var animalkind = prompt("Enter an animal kind");
+    var favplace  = prompt("Enter your favorite place");
+    var favfood = prompt("Enter your favorite food");
+    var bodypart1 = prompt("Enter a body part");
+    var bodypart2 = prompt("Enter another body part");
+    var action = prompt("Enter a action");
+    var animalnoise = prompt("Enter an animal noise");
+  
+    
+   //select the ids and elements, empty them out, enter the response. Leave automated answear if not responce.  
+  $('.friendsname').empty().html( friendsname); 
+  $('.animalkind').empty().html( animalkind); 
+  $('.animalnoise').empty().html( animalnoise);
+  $('#favplace').empty().html( favplace);
+  $('#favfood').empty().html( favfood);
+  $('#bodypart1').empty().html( bodypart1);
+  $('#bodypart2').empty().html( bodypart2);
+  $('#action').empty().html( action);
+
+    
+</script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
